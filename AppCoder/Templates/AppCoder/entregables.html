@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <p style="background-color:burlywood">Buen dia</p>
+<body> <p style="background-color: beige;"
+   <br> aca aparecen los entregables.  <br><br> 
+
+
+    <p>
+        {% for n in notas %}
+            {%if n < 4%}
+                <p style="color:red"> Nota Mala {{n}}</p>
+            {% else %} <p style="color:green">Nota Buena {{n}}</p> 
+            {%endif%}
+        {%endfor%}
+    <p>
+</body>
+</html>
