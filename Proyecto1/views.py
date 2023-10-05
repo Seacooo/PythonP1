@@ -43,4 +43,3 @@ def ProbandoTemplate(self):
     documento= plantilla.render(diccionario)
 
     return HttpResponse (documento)
-
