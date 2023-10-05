@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <p style="background-color:burlywood">Buen dia</p>
+<body> <p style="background-color: beige;"
+   <br> este es el cuerpo de mi plantilla, <br> <br>
+     no te burles por favor. <br> <br>
+      Es la primera que hago. <br> <br>
+    No digan como vivo.  <br><br> :c</body><p>
+
+    <p style="color:red"> "Mi Nombre es: {{nombre}}</p>
+    <p style="color:green"> "Mi Apellido es: {{apellido}}</p>
+    
+    <p>
+        {% for n in notas %}
+            {%if n < 4%}
+                <p style="color:red"> Nota Mala {{n}}</p>
+            {% else %} <p style="color:green">Nota Buena {{n}}</p> 
+            {%endif%}
+        {%endfor%}
+    <p>
+</body>
+</html>
