@@ -13,7 +13,22 @@
 <body> <p style="background-color: beige;"
    <br><p style="background-color: beige;"><font size="6">aca aparecen los entregables</font></p> 
 
-
+<!--Seccion 4-->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppCoder/assets/img/004.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6">
+                <div class="p-5">
+                    <h2 class="display-4">Entregables</h2>
+                    <p>Aca la info sobre la pagina de los entregables</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <p>
         {% for n in notas %}
             {%if n < 4%}

@@ -11,6 +11,22 @@
 </head> <p style="background-color:rgb(253, 249, 0)"><font size="10">Buen dia a todos</font></p>
 <body> <br><p style="background-color: rgb(255, 187, 0);"><font size="6">aca aparecen los profesores</font></p>
     <p>
+        <!-- Content section 2-->
+        <section>
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppCoder/assets/img/002.jpg' %}" alt="..." /></div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <h2 class="display-4">Profesores</h2>
+                            <p>Aca la info sobre la pagina de profesores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         {% for n in notas %}
             {%if n < 4%}
                 <p style="color:red"> Nota Mala {{n}}</p>

@@ -12,7 +12,22 @@
 <body> <p style="background-color: beige;"
    <br><p style="background-color: beige;"><font size="6">aca aparecen los estudiantes</font></p>
     <p>
-
+ <!-- Content section 1-->
+ <section id="scroll">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="p-5"><img class="img-fluid rounded-circle" src="{% static 'AppCoder/assets/img/001.jpg' %}" alt="..." /></div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="p-5">
+                    <h2 class="display-4">Estudiantes</h2>
+                    <p>Aca iria la informacion sobre la pagina de estudiantes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <p>
         {% for n in notas %}
