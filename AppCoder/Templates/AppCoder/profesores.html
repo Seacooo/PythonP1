@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+{% extends "Appcoder/Base.html" %}
+{% load static %}
+
+{% block section1 %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head> <p style="background-color:burlywood">Buen dia</p>
-<body> <p style="background-color: beige;"
-   <br> hola profesores <br>
+</head> <p style="background-color:rgb(253, 249, 0)"><font size="10">Buen dia a todos</font></p>
+<body> <br><p style="background-color: rgb(255, 187, 0);"><font size="6">aca aparecen los profesores</font></p>
     <p>
         {% for n in notas %}
             {%if n < 4%}
@@ -17,3 +20,4 @@
     <p>
 </body>
 </html>
+{% endblock section1 %}
