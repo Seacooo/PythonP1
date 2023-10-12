@@ -3,7 +3,7 @@
 {% load static %}
 
 {%block title %} Formulario {%endblock title %}
-{% block section1 %}
+{% block main %}
 <body>
     <form action=""    method="POST"> {% csrf_token %}
         
@@ -17,4 +17,4 @@
      </form>   
 </body>
 
-{% endblock section1 %}
+{% endblock main %}
