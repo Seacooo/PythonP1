@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% extends "Appcoder/Base.html" %}
+{% load static %}
+
+{%block title %} Formulario {%endblock title %}
+{% block section1 %}
+<body>
+    <form action=""    method="POST"> {% csrf_token %}
+        
+        <table>
+
+            {{ miFormulario.as_table }}
+
+
+        </table>
+        <input type = "submit" value="Guardar Curso">
+     </form>   
+</body>
+
+{% endblock section1 %}
